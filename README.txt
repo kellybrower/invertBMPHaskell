@@ -16,7 +16,7 @@ You must have GHC installed.
 If you don't you can find a download and installation instructions
 here: https://www.haskell.org/ghc/
 
-As shipped, this ReadMe should be a part of a folder called "blockappsKB" 
+As shipped, this ReadMe should be a part of a github repository called "invertBMPHaskell" ()
 along with the following files.
 
 ===============
@@ -43,7 +43,7 @@ Instructions:
 -------------
 
 To run this program, open a terminal window and change 
-directories to the folder named blockappsKB
+directories to the folder containing invertedBMPHaskell
 
 Then type this into your terminal: 
 
@@ -118,7 +118,7 @@ the program would exit with an error anyway, although not explicitly accounted
 for by the author.
 
 Also if you don't take the precaution to follow the instructions and 
-run Main from the terminal within blockappsKB, you can get some funny behavior
+run Main from the terminal within the folder to which you downloaded invertedBMPHaskell, you can get some funny behavior
 such as the error message appending "Inverted" to the front of it. (At least I did)
 
 Try double clicking the executable in your Finder and provide filepaths in lieu
