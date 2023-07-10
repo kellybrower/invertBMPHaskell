@@ -8,25 +8,21 @@ by Blockapps (https://blockapps.net)
 It asks to take a 24 bit per pixel (bbp) BitMap (BMP) image and invert its 
 colors.  The code provided does so without destroying the original image 
 (it creates a new one).
-___________
-Requisites:
------------
+
+#Requisites:
 
 You must have GHC installed.  
 If you don't you can find a download and installation instructions
 here: https://www.haskell.org/ghc/
 
-As shipped, this ReadMe should be a part of a github repository called "invertBMPHaskell" ()
-along with the following files.
+As shipped, this ReadMe should be a part of a github repository called "invertBMPHaskell" along with the following files.
 
-===============
-32bppsample.bmp
-blackbuck.bmp
-Main.hs
-README.txt
-sample.bmp
-sunflower.jpg
-===============
+-32bppsample.bmp
+-blackbuck.bmp
+-Main.hs
+-README.txt
+-sample.bmp
+-sunflower.jpg
 
 32bppsample.bmp is to show that this program exits with error if a BMP file with
 a bpp other than 24 is provided.
@@ -38,16 +34,14 @@ of the original.
 sunflower.jpg is provided to show that an image of the wrong format will exit 
 with error.
 
--------------
-Instructions:
--------------
+#Instructions:
 
 To run this program, open a terminal window and change 
 directories to the folder containing invertedBMPHaskell
 
 Then type this into your terminal: 
 
-$ ghc Main.hs && ./Main
+`$ ghc Main.hs && ./Main`
 
 You will then be prompted to provide a filename.
 
@@ -60,7 +54,7 @@ the folder blockappsKB.
 Since Main.hs is now compiled, simply call the Main program again
 by typing the following into your terminal:
 
-$ ./Main
+`$ ./Main`
 
 Try this for the remaining images and any you might download to test.
 (Just make sure they are placed in the folder blockappsKB)
@@ -91,19 +85,15 @@ Try verifying that it worked by displaying an image and its
 inverted version side by side...
 then inverting the colors on your screen!
 
-___________
-Bonus
-___________
+#Bonus
 
-By adding "|| B.index b 28 == 32" to the end of line 18 of Main.hs,
+By adding `|| B.index b 28 == 32` to the end of line 18 of Main.hs,
 this program can handle 32 bpp BMP
 images such as the one provided.  However, the interview prompt explicitly
 asked to stick with one bpp. Open up the file and edit it to see it works
 by calling 32bppexample.bmp after editing line 18
 
-___________
-Limitations
------------
+#Limitations
 
 Ostensibly, you could provide a file that has the .bmp extension, and has byte
 value 24 at index 28 that wasn't an image.  
